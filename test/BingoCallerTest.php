@@ -1,7 +1,6 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use src\BingoCaller;
 require __DIR__ . "/../src/BingoCaller.php";
 
 class BingoCallerTest extends TestCase
