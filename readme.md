@@ -1,10 +1,18 @@
 ## Features 
 
-## Features 1 - Playing Bingo 
+## Playing Bingo 
 
+### Calling Bingo Numbers
 -We need to be able to call out numbers. 
--Generate Bingo cards for players 
-- Check their cards when someone calls Bingo.
+-Generate Bingo cards for players. 
+-Check their cards when someone calls Bingo.
+
+### Generating Bingo Cards
+-We need a Bingo card generator.
+-Every Bingo card has 25 unique spaces.
+-Each column contains numbers between $lowerBound and $upperBound (inclusive).
+-There is 1 free space at the middle of every generated card.
+
 
 | Column | Lower bound | Upper bound | 
 |--------|-------------|-------------|
