@@ -8,10 +8,10 @@ class BingoCaller
     {
     }
 
-    public function callNumber()
+    public function callNumber(): int
     {
         do{
-            $number = rand(1,75);
+            $number = rand(BingoRules::MIN_CARD_NUMBER,BingoRules::MAX_CARD_NUMBER);
         } while(in_array($number, $this->numbers));
 
         $this->numbers [] = $number;

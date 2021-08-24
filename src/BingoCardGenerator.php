@@ -17,11 +17,11 @@ class BingoCardGenerator
      */
     public function generate(): Card
     {
-        $this->grid['B'] = $this->generateColumnWithBoundaries(1,15);
-        $this->grid['I'] = $this->generateColumnWithBoundaries(16,30);
-        $this->grid['N'] = $this->generateColumnWithBoundaries(31,45);
-        $this->grid['G'] = $this->generateColumnWithBoundaries(46,60);
-        $this->grid['O'] = $this->generateColumnWithBoundaries(61,75);
+        foreach ($this->grid as $columnLetter => $column){
+            $this->grid[$columnLetter] = $this->generateColumnWithBoundaries(BingoRules::BOUNDARIES[$columnLetter][0],
+            BingoRules::BOUNDARIES[$columnLetter][1]
+            );
+        }
 
         //Free s`pace at the middle of the card
         $this->grid['N'] [2] = null;
